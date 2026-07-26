@@ -30,6 +30,7 @@ The implementation analysis in this document is based on eudplib 0.80.6.
 12. [Common Misconceptions](#12-common-misconceptions)
 13. [Recommended Optimization Workflow](#13-recommended-optimization-workflow)
 14. [Conclusion](#14-conclusion)
+15. [Armoha's Comments](#15-armohas-comments)
 
 ---
 
@@ -975,3 +976,71 @@ This leads to a consistent optimization strategy:
 3. Select `EUDIf`, `EUDIfNot`, or an early-jump API according to the business logic.
 4. Reduce iteration volume and unnecessary work before applying micro-optimizations.
 5. Merge or relocate reset only when the safety conditions are clear and the hot-path benefit is credible.
+
+---
+
+## 15. Armoha's Comments
+
+### Bring/Command Performance
+
+I think Bring isn't appropriate example here because it is most offending factor for performance that calculates not only single owner and unit type but counts whole 12players×(all+completed)×(228units+3groups) = 5544 entries if the location isn't cached one.
+
+If Bring/Command is in consideration, collecting same location checks to prevent recounting could be major part.
+
+### Profiling During Development
+
+You can always write test eps file and import eudplib functions in eps to measure with epTrace. When debug: 1, 1 tracing trigger is added on each lines of eps, so it's actually better write function to be profiled in eudplib rather than eps for accurate comparison.
+
+```eps
+EUDLoopN()(99999);
+const thisDoesntAddAnyTrigger = Db(1);
+const butItAddsFalsePositiveResult = EUDArray(1);
+const soIfYouWantToMeasureFunction = function () {};
+const youWouldRatherWriteEudplib = StringBuffer(1);
+importedEudplibFunc();
+EUDEndLoopN();
+```
+
+no one prevents you to measure the performance of each functions during the development. it doesn't include any eps code in output map. it's a test during the development. (making current project code to library and testing it on child test edd).
+
+you can use EP_SetDebugMode (can't remember correct name) and EUDTracedFunc too
+
+### Constant-Condition Optimization
+
+eps automatically collapses constant conditions into single trigger but eudplib currently lacks such optimization and you need to do it by yourself for now
+
+### Multiple Conditions and Short-Circuiting
+
+I think it should mention combinations of multiple conditions and eager/short-circuiting (plain list, EUDAnd, EUDOr, EUDSCAnd, EUDSCOr). It is easy to putting them into single list but it eagerly evaluates every conditions and then check the final result, no short-circuiting.
+
+```text
+if (const && const && var && const)
+-> EUDIf()(EUDSCAnd()([const, const]([var, const])())
+```
+
+It's related to not just performance but side-effect of conditional expressions (e.g. eudfunc calls)
+
+it is python dsl limitation so we need to make every conditions into lambda (very ugly) or compile bytecodes of decorated func to triggers (add stage)
+
+### Condition Ordering in Hot Loops
+
+if there're multiple conditions on hot loop, the order of conditions matter too. it's better to cull as many unit as possible in earlier condition.
+
+e.g. to check unit type, owner, and aliveness, owner in whole unit loop for territory guard unit (usually around 60):
+
+owner and aliveness (order != 0) use same epd address
+
+assuming 1200 units and 60 territory guard unit and 150 units owned by target player: checks unit type -> owner -> aliveness (cull 1640 units in unit type check -> check owner and order id of remaining unit)
+
+- loop invariant code motion xP
+
+### Switch-Based Dispatch
+
+EUD/EPDSwitch could be worth mentioned
+
+```text
+n EUDIf/ElseIf checks : generates 2n triggers, runs 1T 1C in best case (first EUDIfNot) or runs 2nT nC 2nA in worst case
+switch with n cases : generates and run log2(n) triggers (8 cases = 3 triggers) for converting variable to jump table address offset
+computed goto to jump table would be fastest but hard to write xP
+or don't write triggers for every cases. generalize it in single expression if possible
+```

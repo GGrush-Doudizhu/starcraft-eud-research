@@ -8,7 +8,7 @@ This repository studies EUD itself rather than any single library or control-flo
 
 | Topic | English | Simplified Chinese |
 | --- | --- | --- |
-| EUDIf Control-Flow Mechanics and Optimization Practices | [Read](docs/en/EUDIf-Control-Flow-Mechanics-and-Optimization-Practices.md) | [Read](docs/ch-CN/EUDIf%E6%8E%A7%E5%88%B6%E6%B5%81%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md) |
+| EUDIf Control-Flow Mechanics and Optimization Practices | [Read](docs/en/EUDIf-Control-Flow-Mechanics-and-Optimization-Practices.md) | [Read](docs/zh-CN/EUDIf%E6%8E%A7%E5%88%B6%E6%B5%81%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md) |
 
 ## Related Project and Acknowledgments
 

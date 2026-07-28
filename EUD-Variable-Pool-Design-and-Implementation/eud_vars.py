@@ -55,14 +55,14 @@ def _dword(value: object) -> int:
 class VarStats:
     """Immutable allocation statistics for a variable pool."""
 
-    total: int
-    active: int
-    available: int
-    unknown: int
-    initialized: int
-    acquisitions: int
-    reuses: int
-    peak_active: int
+    total: int  # Total number of variables created by the pool.
+    active: int  # Number of variables currently acquired.
+    available: int  # Total number of released variables available for reuse.
+    unknown: int  # Number of available variables with unspecified values.
+    initialized: int  # Number of available variables with known reset values.
+    acquisitions: int  # Total number of successful acquisition operations.
+    reuses: int  # Number of acquisitions satisfied by released variables.
+    peak_active: int  # Highest number of simultaneously active variables.
 
 
 class PoolVar(EUDVariable):
@@ -129,27 +129,27 @@ class VarPool:
     """
 
     __slots__ = (
-        "_acquisitions",
-        "_active",
-        "_available_by_value",
-        "_available_unknown",
-        "_owned",
-        "_peak_active",
-        "_released_values",
-        "_reuses",
-        "_variables",
+        "_acquisitions",  # Total number of successful acquisitions.
+        "_active",  # Variables in active lifetimes.
+        "_available_by_value",  # Released variables grouped by reset value.
+        "_available_unknown",  # Released variables with unspecified values.
+        "_owned",  # All variables created by this pool.
+        "_peak_active",  # Highest recorded number of active variables.
+        "_released_values",  # Recorded state of every released variable.
+        "_reuses",  # Acquisitions served from released variables.
+        "_variables",  # Variables in their original creation order.
     )
 
     def __init__(self) -> None:
-        self._variables: list[PoolVar] = []
-        self._owned: set[PoolVar] = set()
-        self._active: set[PoolVar] = set()
-        self._available_unknown: list[PoolVar] = []
-        self._available_by_value: dict[int, list[PoolVar]] = {}
-        self._released_values: dict[PoolVar, object] = {}
         self._acquisitions = 0
-        self._reuses = 0
+        self._active: set[PoolVar] = set()
+        self._available_by_value: dict[int, list[PoolVar]] = {}
+        self._available_unknown: list[PoolVar] = []
+        self._owned: set[PoolVar] = set()
         self._peak_active = 0
+        self._released_values: dict[PoolVar, object] = {}
+        self._reuses = 0
+        self._variables: list[PoolVar] = []
 
     @property
     def stats(self) -> VarStats:

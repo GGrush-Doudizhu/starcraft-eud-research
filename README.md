@@ -11,7 +11,7 @@ Each research project has its own top-level directory and may contain documents,
 | Project | Resources |
 | --- | --- |
 | `EUDIf-Control-Flow-Mechanics-and-Optimization-Practices` | [English article](EUDIf-Control-Flow-Mechanics-and-Optimization-Practices/EUDIf-Control-Flow-Mechanics-and-Optimization-Practices.md) · [Simplified Chinese article](EUDIf-Control-Flow-Mechanics-and-Optimization-Practices/EUDIf%E6%8E%A7%E5%88%B6%E6%B5%81%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md) |
-| `variables-pool` | [Source code](variables-pool/eud_vars.py) · [English documentation](variables-pool/eud_vars.md) · [Simplified Chinese documentation](variables-pool/eud_vars_zh-CN.md) |
+| `EUD-Variable-Pool-Design-and-Implementation` | [Source code](EUD-Variable-Pool-Design-and-Implementation/eud_vars.py) · [English documentation](EUD-Variable-Pool-Design-and-Implementation/eud_vars.md) · [Simplified Chinese documentation](EUD-Variable-Pool-Design-and-Implementation/eud_vars_zh-CN.md) |
 
 ## Related Tool and Acknowledgments
 

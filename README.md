@@ -10,7 +10,7 @@ Each research project has its own top-level directory and may contain documents,
 
 | Project | Resources |
 | --- | --- |
-| `AI-Friendly-EUD-Memory-Database` | [AI-ready JSON reference](AI-Friendly-EUD-Memory-Database/euddb.json) · [Generator](AI-Friendly-EUD-Memory-Database/build_euddb.py) · [English documentation](AI-Friendly-EUD-Memory-Database/README.md) |
+| `AI-Friendly-EUD-Memory-Database` | [AI-ready TSV reference](AI-Friendly-EUD-Memory-Database/euddb.tsv) · [Generator](AI-Friendly-EUD-Memory-Database/build_euddb.py) · [English documentation](AI-Friendly-EUD-Memory-Database/README.md) |
 | `EUDIf-Control-Flow-Mechanics-and-Optimization-Practices` | [English article](EUDIf-Control-Flow-Mechanics-and-Optimization-Practices/EUDIf-Control-Flow-Mechanics-and-Optimization-Practices.md) · [Simplified Chinese article](EUDIf-Control-Flow-Mechanics-and-Optimization-Practices/EUDIf%E6%8E%A7%E5%88%B6%E6%B5%81%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md) |
 | `EUD-Variable-Pool-Design-and-Implementation` | [Source code](EUD-Variable-Pool-Design-and-Implementation/eud_vars.py) · [English documentation](EUD-Variable-Pool-Design-and-Implementation/eud_vars.md) · [Simplified Chinese documentation](EUD-Variable-Pool-Design-and-Implementation/eud_vars_zh-CN.md) |
 

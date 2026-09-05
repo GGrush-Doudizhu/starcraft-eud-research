@@ -1,0 +1,655 @@
+name	addr	size	len	scr
+Filename for Lastreplay	0x4FF900	12	1	
+Replay Speed Limiters	0x4FF90C	4	7	
+Replay Command Table	0x4FF928	16	2	
+Replay show command modifiers	0x4FF948	32	12	
+Menu Info Array	0x4FFAD0	12	27	
+Campaign List Info	0x4FFC20	8	85	
+Establishing shot pointers	0x4FFF60	8	65	
+cInit Constructor Function Table	0x50C000	4	310	
+Campaign list pointers	0x5122A0	4	6	
+Current Cinematic ID	0x5122B8	4	1	
+Game Speed Refresh Rate	0x5124D8	4	7	Simple Data
+Replay Speed Refresh Rate	0x5124F4	4	7	
+Image Update Functions	0x512510	8	18	
+Image Drawing Functions	0x5125A0	12	18	
+Active Nation ID	0x512678	4	1	Backed By Code
+Active Human ID	0x51267C	4	1	Backed By Code
+Active Storm ID	0x512680	4	1	Unsupported
+Local Nation ID	0x512684	4	1	Backed By Code
+Local Human ID	0x512688	4	1	
+Local Storm ID	0x51268C	4	1	Unsupported
+Cinematic File Name Array	0x512690	4	28	
+Race Filename Modifiers	0x512700	8	1	
+Cursor Filename Array	0x512708	4	19	
+Cursor Scroll Type Modifiers	0x512754	2	10	Unsupported
+Tileset Color Cycle Pointers	0x5127DC	4	9	
+Trigger Action Function Array	0x512800	4	60	
+Mouse and Keyboard Scroll Speed	0x513B68	7	7	Supported
+Mouse Scroll Speed Array	0x513B68	7	7	Supported
+Unit Reqs data	0x514178	1090	1	Simple Data
+Upgrade Reqs data	0x5145C0	838	1	Simple Data
+Research Req Data	0x514908	318	1	Simple Data
+Tech Use Req Data	0x514A48	688	1	Simple Data
+Order Req Data	0x514CF8	1316	1	Simple Data
+Trigger Condition Function Array	0x515A98	4	24	
+Damage type/factor multipliers vs unit size	0x515B84	20	5	
+s_button Offset	0x5187E8	12	250	Backed By Code
+Unit Infomation	0x5193A0	12	228	See Description
+Mission Briefing Action Function Array	0x519E50	4	10	
+Player 1 Trigger List	0x51A280	4	3	Backed By Code
+Player 2 Trigger List	0x51A28C	4	3	Backed By Code
+Player 3 Trigger List	0x51A298	4	3	Backed By Code
+Player 4 Trigger List	0x51A2A4	4	3	Backed By Code
+Player 5 Trigger List	0x51A2B0	4	3	Backed By Code
+Player 6 Trigger List	0x51A2BC	4	3	Backed By Code
+Player 7 Trigger List	0x51A2C8	4	3	Backed By Code
+Player 8 Trigger List	0x51A2D4	4	3	Backed By Code
+Last Random Number	0x51CA14	4	1	Simple Data
+Network Mode Delay	0x51CE84	4	1	Read Only
+Network Mode Delay 2	0x51CE88	4	1	
+Inverse System Time	0x51CE8C	4	1	
+Fog of War Update Counter	0x51CE98	4	1	Simple Data
+GRP Array	0x51CED0	4	999	Read Only
+Images Attack Overlay Array	0x51F2A8	4	999	Read Only
+Images Damage Overlay Array	0x520244	4	999	Read Only
+Images Special Overlay Array	0x5211E0	4	999	Read Only
+Images Landing Dust Overlay Array	0x52217C	4	999	Read Only
+Images Liftoff Dust Overlay Array	0x523118	4	999	Read Only
+Images Damage Overlay Frame	0x5240D0	1	999	Simple Data
+Images Shield Overlay Array	0x52E5C8	4	999	
+Images Array	0x52F568	64	5000	Read Only
+First Image Pointer	0x57EB68	4	1	Read Only
+Last Image Pointer	0x57EB70	4	1	Read Only
+Player Human IDs	0x57EE7C	4	8	Unsupported
+Player Name	0x57EE9C	25	1	Unsupported
+Player Nation IDs	0x57EEC0	4	8	Unsupported
+Active Player Structures	0x57EEE0	36	12	Backed By Code
+Last Whisper Player	0x57F094	25	1	
+Vision Filter	0x57F0B0	4	1	
+Multiplayer Mode	0x57F0B4	4	1	Read Only
+Network Player Status Array	0x57F0B8	4	8	Unsupported
+Network Maximum Buffer Size	0x57F0D8	4	1	
+Main Menu Dialog Handle	0x57F0DC	4	1	Unsupported
+Player Minerals	0x57F0F0	4	12	Simple Data
+Player Gas	0x57F120	4	12	Simple Data
+Player Total Gas Harvested	0x57F150	4	12	Simple Data
+Player Total Minerals Harvested	0x57F180	4	12	Simple Data
+Starting Player Local ID	0x57F1B0	4	1	Simple Data
+Player Slot Types	0x57F1B4	1	12	Simple Data
+Player Slot Races	0x57F1C0	1	12	Simple Data
+Team Game Main Player	0x57F1CC	1	4	Simple Data
+Screen Tile Position	0x57F1D0	2	2	Simple Data
+MapSize	0x57F1D4	2	2	Simple Data
+Messsage Send To Filter	0x57F1D8	2	2	Simple Data
+Message Player Filter	0x57F1DA	2	2	Simple Data
+Tileset	0x57F1DC	2	1	Simple Data
+Current Music	0x57F1DE	2	2	Simple Data
+BWGame Unk_f0	0x57F1E0	1	1	Simple Data
+Active Player Count	0x57F1E1	1	1	Simple Data
+Console Index	0x57F1E2	1	1	Simple Data
+Is Custom Single Player	0x57F1E3	1	1	Simple Data
+BWGame unk_f4	0x57F1E4	4	1	Simple Data
+BWGame unk_f8	0x57F1E8	4	1	Simple Data
+Shared Vision	0x57F1EC	4	12	Simple Data
+Player Color Mapping	0x57F21C	4	8	Simple Data
+Elapsed Time	0x57F23C	4	1	Simple Data
+Saved Elapsed Seconds	0x57F240	4	1	Simple Data
+Campaign Index	0x57F244	2	1	Simple Data
+Next Scenario name	0x57F246	32	1	Simple Data
+Single Player Race	0x57F266	1	1	Simple Data
+Single Player Computer Races	0x57F267	1	8	Simple Data
+BWGame unk_17F	0x57F26F	1	1	Simple Data
+Saved Screen Positions	0x57F270	4	3	Simple Data
+Player Units available	0x57F27C	228	12	Simple Data
+BWGame unk_c3c	0x57FD2C	1	8	Simple Data
+Last Event Position	0x57FD34	4	2	Simple Data
+Map File Name	0x57FD3C	260	1	Simple Data
+Map Title	0x57FE40	32	1	Simple Data
+Hotkeyed Unit	0x57FE60	864	8	Simple Data
+BWGame unk_2870	0x581960	1	1024	Simple Data
+Default Message Filter	0x581D60	1	1	Simple Data
+Player Lose Type	0x581D61	1	1	Simple Data
+Player Left	0x581D62	1	8	Simple Data
+Player Selection Circle Colors	0x581D6A	1	12	Simple Data
+Unit Color Table	0x581D76	8	12	Simple Data
+Minimap Color Table	0x581DD6	1	12	Simple Data
+BWGame unk_2cf2	0x581DE2	1	2	Simple Data
+Score Total Units Produced	0x581DE4	4	12	Simple Data
+Score Units Produced	0x581E14	4	12	Simple Data
+Score Units Owned	0x581E44	4	12	Simple Data
+Number of Units Lost	0x581E74	4	12	Simple Data
+Number of Units Killed	0x581EA4	4	12	Simple Data
+Score Unit Total	0x581ED4	4	12	Simple Data
+Score Kill Total	0x581F04	4	12	Simple Data
+Score Structures Constructed Total	0x581F34	4	12	Simple Data
+Number of Buildings Constructed	0x581F64	4	12	Simple Data
+Number of Buildings Owned	0x581F94	4	12	Simple Data
+Number of Buildings Lost	0x581FC4	4	12	Simple Data
+Number of Buildings Razed	0x581FF4	4	12	Simple Data
+Buildings Score	0x582024	4	12	Simple Data
+Razings Score	0x582054	4	12	Simple Data
+Number of Factories Constructed	0x582084	4	12	Simple Data
+Number of Factories Owned	0x5820B4	4	12	Simple Data
+Number of Factories Lost	0x5820E4	4	12	Simple Data
+Number of Factories Razed	0x582114	4	12	Simple Data
+Zerg Control Available	0x582144	4	12	Simple Data
+Zerg Control Used	0x582174	4	12	Simple Data
+Zerg Control Max	0x5821A4	4	12	Simple Data
+Terran Supply Available	0x5821D4	4	12	Simple Data
+Terran Supply Used	0x582204	4	12	Simple Data
+Terran Supply Max	0x582234	4	12	Simple Data
+Protoss Psi Available	0x582264	4	12	Simple Data
+Protoss Psi Used	0x582294	4	12	Simple Data
+Protoss Psi Max	0x5822C4	4	12	Simple Data
+Score Custom	0x5822F4	4	12	Simple Data
+All Unit Counts Table	0x582324	48	228	Simple Data
+Completed Unit Counts Table	0x584DE4	48	228	Simple Data
+Larva Count	0x585474	12	1	
+Killed Unit Counts Table	0x5878A4	48	228	Simple Data
+Death Table Start	0x58A364	48	228	Simple Data
+SC Technologies Available (0-23)	0x58CE24	24	12	Simple Data
+SC Technologies Researched (0-23)	0x58CF44	24	12	Simple Data
+SC Tech Research In Progress	0x58D064	1	36	Simple Data
+SC Upgrades Available (0-45)	0x58D088	46	12	Simple Data
+SC Upgrades Researched (0-45)	0x58D2B0	46	12	Simple Data
+SC Upgrade in Progress Lvl 1 (Unused?)	0x58D4D8	1	72	Simple Data
+SC Upgrade in Progress Lvl 2 (Unused?)	0x58D520	1	72	Simple Data
+Player's Force	0x58D5B0	1	8	Simple Data
+Force Flags	0x58D5B8	1	4	Simple Data
+Force Names	0x58D5BC	30	4	Simple Data
+Player Alliances	0x58D634	12	12	Simple Data
+Mission Objectives Index	0x58D6C4	4	12	Simple Data
+Countdown Timer	0x58D6F4	4	1	Simple Data
+Elapsed Time	0x58D6F8	4	1	Simple Data
+SC Switch Table (Unused?)	0x58D6FC	4	1	Simple Data
+Player Victory Status	0x58D700	1	8	Simple Data
+Leaderboard Has Computer Players	0x58D708	4	1	Simple Data
+Leader Board Type	0x58D70C	1	1	Simple Data
+Leader Board Condition	0x58D70D	1	1	Simple Data
+Leader Board Subtype	0x58D70E	2	1	Simple Data
+Leader Board Goal	0x58D710	4	1	Simple Data
+Leader Board String Index	0x58D714	4	1	Simple Data
+#'s of Game Pauses	0x58D718	1	8	Simple Data
+Start Locations	0x58D720	4	8	Simple Data
+Vanilla Location Table	0x58D740	20	64	Simple Data
+Switch Table	0x58DC40	32	1	Simple Data
+Location Table	0x58DC60	20	255	Simple Data
+Time Pause State	0x58F04C	4	1	Simple Data
+BW Technologies Available (24-43)	0x58F050	20	12	Simple Data
+BW Technologies Researched (24-43)	0x58F140	20	12	Simple Data
+BW Tech Research In Progress	0x58F230	1	72	
+BW Upgrades Available (46-60)	0x58F278	15	12	Simple Data
+BW Upgrades Researched (46-60)	0x58F32C	15	12	Simple Data
+BW Upgrade In Progress	0x58F3E0	1	96	Simple Data
+Is Expansion	0x58F440	1	1	Simple Data
+BWGame unk_10351	0x58F441	1	1	Simple Data
+Unknown Player Color Something	0x58F442	1	8	Simple Data
+"BWGame ""Literally Unused"""	0x58F44A	1	29604	Simple Data
+Input Procedures	0x5968A0	4	19	
+Mouse Left Click	0x5968AC	4	1	
+Game Mode	0x596904	2	1	Unsupported
+Virtual Key Array	0x596A18	1	256	Backed By Code
+"Pointer to ""MTXM"" map tile data"	0x5993C4	4	1	Backed By Code
+"Pointer to map ""STR "" section"	0x5993D4	4	1	Backed By Code
+Game Subtype ID	0x59BA5C	4	1	
+Mapdata.dat - Mission dir	0x59C080	4	65	
+Last Time for Drop Window	0x59CC78	4	1	Simple Data
+Drop Timer	0x59CC80	4	1	Simple Data
+Unitnode Table	0x59CCA8	336	1700	Backed By Code
+CUnit - Previous Unit	0x59CCA8	4	1	Supported
+CUnit - Next Unit	0x59CCAC	4	1	Supported
+CUnit - HP	0x59CCB0	4	1	Supported
+CUnit - Sprite	0x59CCB4	4	1	Supported
+CUnit - Target Pos	0x59CCB8	2	2	Supported
+CUnit - Target Unit	0x59CCBC	4	1	Supported
+CUnit - Next Movement Waypoint	0x59CCC0	2	2	Unsupported
+CUnit - Next Target Waypoint	0x59CCC4	4	1	Unsupported
+CUnit - Movement Flags	0x59CCC8	1	1	Supported
+CUnit - Current Direction 1	0x59CCC9	1	1	Supported
+CUnit - Flingy Turn Radius	0x59CCCA	1	1	Supported
+CUnit - Velocity Direction 1	0x59CCCB	1	1	Supported
+CUnit - Flingy ID	0x59CCCC	2	1	Supported
+CUnit - Flingy Movement Type	0x59CCCF	1	1	Supported
+CUnit - Position Coordinates	0x59CCD0	2	2	Supported
+CUnit - Halt X Coordinate	0x59CCD4	4	1	Supported
+CUnit - Halt Y Coordinate	0x59CCD8	4	1	Supported
+CUnit - Flingy Top Speed	0x59CCDC	4	1	Supported
+CUnit - Move Acceleration	0x59CCE0	4	1	Supported
+CUnit - Move Speed	0x59CCE4	4	1	Supported
+CUnit - Move Speed On X-Axis	0x59CCE8	4	1	Supported
+CUnit - Move Speed On Y-Axis	0x59CCEC	4	1	Supported
+CUnit - Flingy Acceleration	0x59CCF0	2	1	Supported
+CUnit - Current Direction 2	0x59CCF2	1	1	Supported
+CUnit - Velocity Direction 2	0x59CCF3	1	1	Supported
+CUnit - Player ID	0x59CCF4	1	1	Supported
+CUnit - Main Order ID	0x59CCF5	1	1	Supported
+CUnit - Main Order State	0x59CCF6	1	1	Supported
+CUnit - Order Signal	0x59CCF7	1	1	Supported
+CUnit - Order Unit Type	0x59CCF8	2	1	Supported
+CUNIT - Idle Order Timer	0x59CCF9	4	1	
+CUnit - Main Order Timer	0x59CCFC	1	1	Supported
+CUnit - Cooldown	0x59CCFD	1	3	Supported
+CUnit - Order Coordinates	0x59CD00	2	2	Supported
+CUnit - Order Target Unit	0x59CD04	4	1	Supported
+CUnit - Shield Points	0x59CD08	4	1	Supported
+CUnit - Unit Type	0x59CD0C	2	1	Supported
+CUnit - Previous Player Unit	0x59CD10	4	1	Supported
+CUnit - Next Player Unit	0x59CD14	4	1	Supported
+CUnit - Sub Unit	0x59CD18	4	1	Supported
+CUnit - Order Queue Head	0x59CD1C	4	1	
+CUnit - Order Queue Tail	0x59CD20	4	1	
+CUnit - Auto-Target Unit	0x59CD24	4	1	Supported
+CUnit - Connected Unit	0x59CD28	4	1	Supported
+CUnit - Order Queue Count	0x59CD2C	1	1	Supported
+CUnit - Order Queue Timer	0x59CD2D	1	1	Supported
+CUnit - Unknown 0x086	0x59CD2E	1	1	Supported
+CUnit - Attack Notify Timer	0x59CD2F	1	1	Supported
+CUnit - Previous Unit Type	0x59CD30	2	1	
+CUnit - Last Event Timer	0x59CD32	1	1	
+CUnit - Last Event Color	0x59CD33	1	1	
+CUnit - Unused 0x08C	0x59CD34	2	1	Supported
+CUnit - Rank Increase	0x59CD36	1	1	Supported
+CUnit - Kill Count	0x59CD37	1	1	Supported
+CUnit - Last Attacking Player	0x59CD38	1	1	Supported
+CUnit - Secondary Order Timer	0x59CD39	1	1	Supported
+CUnit - AI Action Flag	0x59CD3A	1	1	Supported
+CUnit - User Action Flags	0x59CD3B	1	1	Supported
+CUnit - Button Set	0x59CD3C	2	1	Supported
+Order Destination Invalid (???)	0x59CD3C	4	1	
+CUnit - Is Cloaked	0x59CD3E	1	1	Supported
+CUnit - Movement State	0x59CD3F	1	1	Supported
+CUnit - Build Queue	0x59CD40	2	5	Supported
+CUnit - Energy	0x59CD4A	2	1	Supported
+CUnit - Build Queue Slot	0x59CD4C	1	1	Supported
+CUnit - Uniqueness Identifier	0x59CD4D	1	1	Supported
+CUnit - Secondary Order ID	0x59CD4E	1	1	Supported
+CUnit - Building Overlay State	0x59CD4F	1	1	Supported
+CUnit - HP Gain	0x59CD50	2	1	Supported
+Cunit - Shield Gain	0x59CD52	2	1	Supported
+CUnit - Remaining Build Time	0x59CD54	2	1	Supported
+CUnit - Previous HP	0x59CD56	2	1	Supported
+CUnit - Loaded Unit Index	0x59CD58	2	8	Unsupported
+CUnit - Vulture - Spider Mines	0x59CD68	1	1	Supported
+CUnit - Carrier/Reaver - In Hangar	0x59CD68	4	1	Supported
+CUnit - Scarab/Interceptor - Parent Unit	0x59CD68	4	1	Supported
+CUnit - Beacon - Unknown +00	0x59CD68	4	1	Supported
+CUnit - Building - Addon	0x59CD68	4	1	Supported
+CUnit - Worker - Powerup Unit	0x59CD68	4	1	Supported
+CUnit - Carrier/Reaver - Out Hanger	0x59CD6C	4	1	Supported
+CUnit - Scarab/Interceptor - Previous	0x59CD6C	4	1	Supported
+CUnit - Beacon - Unknown +04	0x59CD6C	4	1	Supported
+CUnit - Building - Addon Building Type	0x59CD6C	2	1	Supported
+CUnit - Worker - Target Resource Coord	0x59CD6C	2	2	Supported
+CUnit - Building - Upgrade/Research Time	0x59CD6E	2	1	Supported
+CUnit - Carrier/Reaver - In Hangar Count	0x59CD70	1	1	Supported
+CUnit - Scarab/Interceptor - Next	0x59CD70	4	1	Supported
+CUnit - Beacon - Flag Spawn Frame	0x59CD70	4	1	Supported
+CUnit - Building - Tech Type	0x59CD70	1	1	Supported
+CUnit - Worker - Target Resource Unit	0x59CD70	4	1	Supported
+CUnit - Carrier/Reaver - Out Hangar Count	0x59CD71	1	1	Supported
+CUnit - Building - Upgrade Type	0x59CD71	1	1	Supported
+CUnit - Building - Larva Spawn Timer	0x59CD72	1	1	Supported
+CUnit - Building - Landing Timer	0x59CD73	1	1	Supported
+CUnit - Scarab/Interceptor - In Hanger	0x59CD74	1	1	Supported
+CUnit - Building - Creep Timer	0x59CD74	1	1	Supported
+CUnit - Worker - Repair/Resource Timer	0x59CD74	2	1	Supported
+CUnit - Building - Upgrade Level	0x59CD75	1	1	Supported
+CUnit - Worker - Is Carring Something	0x59CD76	1	1	Supported
+CUnit - Worker - Resource Carry Count	0x59CD77	1	1	Supported
+CUnit - Resource - Resource Count	0x59CD78	2	1	Supported
+CUnit - Worker - Harvest Target Unit	0x59CD78	4	1	Supported
+CUnit - Nydus - Exit Unit	0x59CD78	4	1	Supported
+CUnit - Ghost - Nuke Dot Sprite	0x59CD78	4	1	Supported
+CUnit - Pylon - Power Overlay Sprite	0x59CD78	4	1	Supported
+CUnit - Nuke Silo - Attached Nuke	0x59CD78	4	1	Supported
+CUnit - Powerup - Origin Coordinates	0x59CD78	2	2	Supported
+CUnit - Hatchery? - Harvest Value	0x59CD78	2	4	Supported
+CUnit - Resource - Resource IScript	0x59CD7A	1	1	Supported
+CUnit - Resource - Gatherer Queue Count	0x59CD7B	1	1	Supported
+CUnit - Worker - Previous Harvest Unit	0x59CD7C	4	1	Supported
+CUnit - Resource - Next Gatherer	0x59CD7C	4	1	Supported
+CUnit - Silo - Ready	0x59CD7C	1	1	Supported
+CUnit - Resource - Resource Group	0x59CD80	1	1	Supported
+CUnit - Worker - Next Harvest Unit	0x59CD80	4	1	Supported
+CUnit - Resource - Reource Belongs to AI	0x59CD81	1	1	Supported
+CUnit - Status Flags	0x59CD84	4	1	Supported
+CUnit - Resource Type	0x59CD88	1	1	
+CUnit - Wireframe Randomizer	0x59CD89	1	1	
+CUnit - Secondary Order State	0x59CD8A	1	1	
+CUnit - Recent Order Time	0x59CD8B	1	1	
+CUnit - Visiblity Status	0x59CD8C	4	1	
+CUnit - Secondary Order Position	0x59CD90	2	2	
+CUnit - Unit beingBuilt	0x59CD94	4	1	Unsupported
+CUnit - Previous Burrowed Unit	0x59CD98	4	1	
+CUnit - Next Burrowed Unit	0x59CD9C	4	1	
+CUnit - Rally - Rally Coordinates	0x59CDA0	2	2	Supported
+CUnit - Pylon - Previous Psi Provider	0x59CDA0	4	1	Supported
+CUnit - Rally - Rally Unit	0x59CDA4	4	1	Supported
+CUnit - Pylon - Next Psi Provider	0x59CDA4	4	1	Supported
+CUnit - Pathing Pointer	0x59CDA8	4	1	
+CUnit - Pathing Collision Interval	0x59CDAC	1	1	Supported
+CUnit - Pathing Flags	0x59CDAD	1	1	Supported
+CUnit - Is Healing	0x59CDAF	1	1	Supported
+CUnit - Contour Bounds	0x59CDB0	2	4	
+CUnit - Remove Timer	0x59CDB8	2	1	Supported
+CUnit - Matrix Damage Absorption	0x59CDBA	2	1	Supported
+CUnit - Matrix Timer	0x59CDBC	1	1	Supported
+CUnit - Stim Timer	0x59CDBD	1	1	Supported
+CUnit - Ensnare Timer	0x59CDBE	1	1	Supported
+CUnit - Lockdown Timer	0x59CDBF	1	1	Supported
+CUnit - Irradiate Timer	0x59CDC0	1	1	Supported
+CUnit - Stasis Timer	0x59CDC1	1	1	Supported
+CUnit - Plague Timer	0x59CDC2	1	1	Supported
+CUnit - Storm Timer	0x59CDC3	1	1	Supported
+CUnit - Irradiated By	0x59CDC4	4	1	Supported
+CUnit - Irradiate Player ID	0x59CDC8	1	1	Supported
+CUnit - Parasite Flags	0x59CDC9	1	1	Supported
+CUnit - Cycle Counter	0x59CDCA	1	1	Supported
+CUnit - Blind State	0x59CDCB	1	1	Supported
+CUnit - Maelstorm Timer	0x59CDCC	1	1	Supported
+CUnit - Unused Timer	0x59CDCD	1	1	Supported
+CUnit - Acid Spore Count	0x59CDCE	1	1	Supported
+CUnit - Acid Spore 1/9	0x59CDCF	1	1	See Description
+CUnit - Acid Spore 2/9	0x59CDD0	1	1	Unsupported
+CUnit - Acid Spore 3/9	0x59CDD1	1	1	Unsupported
+CUnit - Acid Spore 4/9	0x59CDD2	1	1	Unsupported
+CUnit - Acid Spore 5/9	0x59CDD3	1	1	Unsupported
+CUnit - Acid Spore 6/9	0x59CDD4	1	1	Unsupported
+CUnit - Acid Spore 7/9	0x59CDD5	1	1	Unsupported
+CUnit - Acid Spore 8/9	0x59CDD6	1	1	Unsupported
+CUnit - Acid Spore 9/9	0x59CDD7	1	1	Unsupported
+CUnit - Bullet Behavior 3x3 Attack	0x59CDD8	2	1	
+CUnit - AI Data	0x59CDDC	4	1	
+Emp Shockwave Missiles (???)	0x59CDE0	4	1	
+CUnit - Air Strength	0x59CDE0	2	1	Unsupported
+CUnit - Ground Strength	0x59CDE2	2	1	Unsupported
+CUnit - Unit Finder	0x59CDE4	4	4	
+CUnit - Repulse Unknown	0x59CDF4	1	1	Supported
+CUnit - Repulse Angle	0x59CDF5	1	1	Supported
+CUnit - Drift X	0x59CDF6	1	1	Supported
+CUnit - Drift Y	0x59CDF7	1	1	Supported
+SC Upgrade in Progress Lvl 3 (???)	0x59D568	1	72	
+Last Unit Pointer	0x6283F8	4	1	
+First Unit Pointer	0x628430	4	1	Backed By Code
+First Empty Unit	0x628438	4	1	Backed By Code
+Screen Coordinate X	0x628448	4	1	Read Only
+Screen Coordinate Y	0x628470	4	1	Read Only
+glScrollPixelX	0x62848C	4	1	Read Only
+gfpCellMap	0x628494	4	1	Backed By Code
+glScrollPixelY	0x6284A8	4	1	Read Only
+Current Player Selection	0x6284B8	4	12	Backed By Code
+Player 1 Selection Group	0x6284E8	4	12	Backed By Code
+Player 2 Selection Group	0x628518	4	12	Backed By Code
+Player 3 Selection Group	0x628548	4	12	Backed By Code
+Player 4 Selection Group	0x628578	4	12	Backed By Code
+Player 5 Selection Group	0x6285A8	4	12	Backed By Code
+Player 6 Selection Group	0x6285D8	4	12	Backed By Code
+Player 7 Selection Group	0x628608	4	12	Backed By Code
+Player 8 Selection Group	0x628638	4	12	Backed By Code
+Sprite Table	0x629D98	36	2500	Read Only
+CSprite - Previous Entry	0x629D98	4	1	Supported
+CSprite - Next Entry	0x629D9C	4	1	Supported
+CSprite - Sprite ID	0x629DA0	2	1	Supported
+CSprite - Player ID	0x629DA2	1	1	Supported
+CSprite - Selection Index	0x629DA3	1	1	Supported
+CSprite - Visibility Flags	0x629DA4	1	1	Unsupported
+CSprite - Elevation Level	0x629DA5	1	1	Unsupported
+CSprite - Draw Flags	0x629DA6	1	1	Unsupported
+CSprite - Selection Timer	0x629DA7	1	1	Unsupported
+CSprite - Index	0x629DA8	2	1	Unsupported
+CSprite - Unknown Flags 12	0x629DAA	1	1	Unsupported
+CSprite - Unknown flags 13	0x629DAB	1	1	Unsupported
+CSprite - Position	0x629DAC	2	2	Unsupported
+CSprite - Primary Image	0x629DB0	4	1	Unsupported
+CSprite - Image Head	0x629DB4	4	1	Unsupported
+CSprite - Image Tail	0x629DB8	4	1	Unsupported
+Pylon Auras are Visible	0x63FF48	4	1	
+gameTextCounters	0x640B24	4	12	Unsupported
+Next Display Text Line	0x640B58	4	1	Simple Data
+Display Text	0x640B60	218	13	Backed By Code
+Trigger Wait Timers	0x650980	4	8	
+Trigger Execution Timer (Hyper triggers)	0x6509A0	4	1	Simple Data
+Trigger Current Player aka CP Trick	0x6509B0	4	1	Simple Data
+Network Buffer	0x654880	496	1	Backed By Code
+Network Buffer Used	0x654AA0	4	1	Supported
+Accept Commands	0x6556E0	4	1	Unsupported
+Upgrades.dat - Max Level	0x655700	1	61	Simple Data
+Upgrades.dat - Mineral Cost Base	0x655740	2	61	Simple Data
+Upgrades.dat - Gas Cost Factor	0x6557C0	2	61	Simple Data
+Upgrades.dat - Gas Cost Base	0x655840	2	61	Simple Data
+Upgrades.dat - Dat Requirement Offset	0x6558C0	2	61	Simple Data
+Upgrades.dat - Time Factor	0x655940	2	61	Simple Data
+Upgrades.dat - Mineral Cost Factor	0x6559C0	2	61	Simple Data
+Upgrades.dat - Label	0x655A40	2	61	Simple Data
+Upgrades.dat - Icon	0x655AC0	2	61	Simple Data
+Upgrades.dat - Brood War Flag	0x655B3C	1	61	Simple Data
+Upgrades.dat - Time Base	0x655B80	2	61	Simple Data
+Upgrades.dat - Race	0x655BFC	1	61	Simple Data
+Portdata.dat - Idle SMK	0x655C58	4	110	Backed By Code
+Portdata.dat - Idle SMK Change	0x655E10	1	110	
+Portdata.dat - Talking SMK	0x655E80	4	110	Backed By Code
+Portdata.dat - Idle Unknown	0x656038	1	110	
+Portdata.dat - Talking SMK change	0x6560A8	1	110	
+Portdata.dat - Talking unknown	0x656118	1	110	
+Techdata.dat - Unknown1	0x656198	2	44	Simple Data
+Techdata.dat - Gas Cost	0x6561F0	2	44	Simple Data
+Techdata.dat - Mineral Cost	0x656248	2	44	Simple Data
+Techdata.dat - Label	0x6562A0	2	44	Simple Data
+Techdata.dat - Data Restrictions	0x6562F8	2	44	Simple Data
+Techdata.dat - Researched	0x656350	1	44	Simple Data
+Techdata.dat - Energy Cost	0x656380	2	44	Simple Data
+Techdata.dat - Time	0x6563D8	2	44	Simple Data
+Techdata.dat - Icon	0x656430	2	44	Simple Data
+Techdata.dat - Race	0x656488	1	44	Simple Data
+Techdata.dat - Brood War Flag	0x6564B4	1	44	Simple Data
+Weapons.dat - Damage Factor	0x6564E0	1	130	Simple Data
+Weapons.dat - Target Error Message	0x656568	2	130	Simple Data
+Weapons.dat - Behavior	0x656670	1	130	Simple Data
+Weapons.dat - Effect	0x6566F8	1	130	Simple Data
+Weapons.dat - Icon	0x656780	2	130	Simple Data
+Damage type/factor multipliers vs unit size	0x65678C	20	5	
+Weapons.dat - Splash Inner Radius	0x656888	2	130	Simple Data
+Weapons.dat - Attack Angle	0x656990	1	130	Simple Data
+Weapons.dat - Minimum Range	0x656A18	4	130	Simple Data
+Weapons.dat - Graphics Y Offset	0x656C20	1	130	Simple Data
+Weapons.dat - Graphics	0x656CA8	4	130	Simple Data
+Weapons.dat - Damage Amount	0x656EB0	2	130	Simple Data
+Weapons.dat - Cooldown	0x656FB8	1	130	Simple Data
+Weapons.dat - Remove After	0x657040	1	130	Simple Data
+Weapons.dat - Splash Middle Radius	0x6570C8	2	130	Simple Data
+Weapons.dat - Upgrade ID	0x6571D0	1	130	Simple Data
+Weapons.dat - Damage Type	0x657258	1	130	Simple Data
+Weapons.dat - Label	0x6572E0	2	130	Simple Data
+Weapons.dat - Special Attack	0x6573E8	1	130	Simple Data
+Weapons.dat - Maximum Range	0x657470	4	130	Simple Data
+Weapons.dat - Upgrade Bonus	0x657678	2	130	Simple Data
+Weapons.dat - Splash Outer Radius	0x657780	2	130	Simple Data
+Weapons.dat - Launch Spin	0x657888	1	130	Simple Data
+Weapons.dat - Graphics X Offset	0x657910	1	130	Simple Data
+Weapons.dat - Target Flags	0x657998	2	130	Simple Data
+Game Brightness	0x657A9C	4	1	Simple Data
+Fog of War Masks	0x657AA0	1	4096	Backed By Code
+Units.dat - Max Hits (Air)	0x65FC18	1	228	Simple Data
+Units.dat - Gas Cost	0x65FD00	2	228	Simple Data
+Units.dat - Armor	0x65FEC8	1	228	Simple Data
+"Units.dat - ""What"" Sound Start"	0x65FFB0	2	228	Simple Data
+Units.dat - Computer AI Unit Type	0x660178	1	228	Simple Data
+Units.dat - Map String	0x660260	2	228	Simple Data
+Units.dat - Build Time	0x660428	2	228	Simple Data
+Units.dat - Start Direction	0x6605F0	1	228	Simple Data
+Units.dat - Brood War Flag	0x6606D8	1	228	Simple Data
+Units.dat - Subunit 1	0x6607C0	2	228	Simple Data
+Units.dat - Transport Space Provided	0x660988	1	228	Simple Data
+Units.dat - Dat Requirement Offset	0x660A70	2	228	Simple Data
+Units.dat - Subunit 2	0x660C38	2	228	Simple Data
+Units.dat - Shield Amount	0x660E00	2	228	Simple Data
+Units.dat - Movement Flags	0x660FC8	1	228	Simple Data
+Units.dat - Construction Animation	0x6610B0	4	228	Simple Data
+"Units.dat - ""Yes"" Sound End"	0x661440	2	106	Simple Data
+Units.dat - Staredit Availability Flags	0x661518	2	228	Simple Data
+Units.dat - Air Weapon	0x6616E0	1	228	Simple Data
+Units.dat - Unit Dimensions	0x6617C8	8	228	Simple Data
+"Units.dat - ""Pissed"" Sound End"	0x661EE8	2	106	Simple Data
+"Units.dat - ""Ready"" Sound"	0x661FC0	2	106	Simple Data
+Units.dat - Right-click Action	0x662098	1	228	Simple Data
+Units.dat - Size Class	0x662180	1	228	Simple Data
+Units.dat - Human Init Action	0x662268	1	228	Simple Data
+Units.dat - Max HP	0x662350	4	228	Simple Data
+Units.dat - Addon Placement	0x6626E0	4	96	Simple Data
+Units.dat - Building Dimensions	0x662860	4	228	Simple Data
+"Units.dat - ""What"" Sound End"	0x662BF0	2	228	Simple Data
+Units.dat - Seek Range	0x662DB8	1	228	Simple Data
+Units.dat - Computer Init Action	0x662EA0	1	228	Simple Data
+Units.dat - Portrait	0x662F88	2	228	Simple Data
+Units.dat - Elevation Level	0x663150	1	228	Simple Data
+Units.dat - Sight Range	0x663238	1	228	Simple Data
+Units.dat - Attack Unit Order	0x663320	1	228	Simple Data
+Units.dat - Build Score	0x663408	2	228	Simple Data
+Units.dat - Armor Upgrade ID	0x6635D0	1	228	Simple Data
+Units.dat - Ground Weapon	0x6636B8	1	228	Simple Data
+Units.dat - Group Flags	0x6637A0	1	228	Simple Data
+Units.dat - Mineral Cost	0x663888	2	228	Simple Data
+Units.dat - Attack Move Order ID	0x663A50	1	228	Simple Data
+"Units.dat - ""Pissed"" Sound Start"	0x663B38	2	106	Simple Data
+"Units.dat - ""Yes"" Sound Start"	0x663C10	2	107	Simple Data
+Units.dat - Supply Used	0x663CE8	1	228	Simple Data
+Units.dat - Rank/Sublabel	0x663DD0	1	228	Simple Data
+Units.dat - Kill Score	0x663EB8	2	228	Simple Data
+Units.dat - Advanced Flags	0x664080	4	228	Simple Data
+Units.dat - Transport Space Required	0x664410	1	228	Simple Data
+Units.dat - Graphics (Flingy ID)	0x6644F8	1	228	Backed By Code
+Units.dat - Max Hits (Ground)	0x6645E0	1	228	Simple Data
+Units.dat - Supply Provided	0x6646C8	1	228	Simple Data
+Units.dat - Has Shields	0x6647B0	1	228	Simple Data
+Units.dat - Idle Order	0x664898	1	228	Simple Data
+Units.dat - Infestation Unit	0x664980	2	96	Simple Data
+Orders.dat - Unknown 4	0x664A40	1	189	Simple Data
+Orders.dat - Use Weapon Targetting	0x664B00	1	189	Simple Data
+Orders.dat - Unknown 12	0x664BC0	1	189	Simple Data
+Orders.dat - Unknown 11	0x664C80	1	189	Simple Data
+Orders.dat - Animation	0x664D40	1	189	Simple Data
+Orders.dat - Energy Technology	0x664E00	1	189	Simple Data
+Orders.dat - Highlight Button ID	0x664EC0	2	189	Simple Data
+Orders.dat - Can Be Interrupted	0x665040	1	189	Simple Data
+Orders.dat - Unknown 7	0x665100	1	189	Simple Data
+Orders.dat - Unknown 9	0x6651C0	1	189	Simple Data
+Orders.dat - Label ID	0x665280	2	189	Simple Data
+Orders.dat - Obscured Order	0x665400	1	189	Simple Data
+Orders.dat - Can Be Obstructed?	0x6654C0	1	189	Simple Data
+Orders.dat - Dat Reqs Offset	0x665580	2	189	Simple Data
+Orders.dat - Can Be Queued	0x665700	1	189	Simple Data
+Orders.dat - Unknown 5	0x6657C0	1	189	Simple Data
+Orders.dat - Targeting	0x665880	1	189	Simple Data
+Orders.dat - Order is Secondary	0x665940	1	189	Simple Data
+Orders.dat - Unknown 3	0x665A00	1	189	Simple Data
+Sprites.dat - Selection Circle	0x665AC0	1	387	Read Only
+Sprites.dat - Visible	0x665C48	1	517	Simple Data
+Sprites.dat - HP Bar Length	0x665E50	1	387	Read Only
+Sprites.dat - Selection Vertical Offset	0x665FD8	1	387	Read Only
+Sprites.dat - Image Index	0x666160	2	517	Backed By Code
+Sprites.dat - Unknown	0x666570	1	517	Simple Data
+Images.dat - Landing Dust Overlay	0x666778	4	999	Read Only
+Images.dat - Draw If Cloaked	0x667718	1	999	Simple Data
+Images.dat - Special Overlay	0x667B00	4	999	Read Only
+Images.dat - GRP File	0x668AA0	4	999	Read Only
+Images.dat - Drawing Function (Remapping Table)	0x669A40	1	999	Simple Data
+Images.dat - Remapping Table (Drawing Function)	0x669E28	1	999	Backed By Code
+Images.dat - Damage Overlay	0x66A210	4	999	Read Only
+Images.dat - Attack Overlay	0x66B1B0	4	999	Read Only
+Images.dat - Clickable	0x66C150	1	999	Simple Data
+Images.dat - Sheilds Overlay	0x66C538	4	999	Read Only
+Images.dat - Use Full Iscript	0x66D4D8	1	999	Simple Data
+Images.dat - Lift-off Dust Overlay	0x66D8C0	4	999	Read Only
+Images.dat - Graphics Turns	0x66E860	1	999	Simple Data
+Images.dat - Iscript ID	0x66EC48	4	999	Backed By Code
+AIScript pointer	0x68C104	4	1	Backed By Code
+BWScript pointer	0x68C108	4	1	Backed By Code
+Send Message Type	0x68C144	4	1	Simple Data
+Current Button Set	0x68C14C	4	1	Simple Data
+TranWire.grp pointer	0x68C1F4	4	1	Backed By Code
+GrpWire.grp Pointer	0x68C1FC	4	1	Backed By Code
+Wirefram.grp Pointer	0x68C204	4	1	Backed By Code
+Sfxdata.dat - minVolume	0x68C448	1	1144	
+Sfxdata.dat - Flags	0x68C8C0	1	1144	
+Sfxdata.dat - lengthAdjust	0x68CD38	2	1144	
+Sfxdata.dat - Priority	0x68D628	1	1144	
+Sfxdata.dat - Sound file	0x68DAA0	4	1144	
+Flingy.dat - Movement Control	0x6C9858	1	209	Simple Data
+Flingy.dat - Halt Distance	0x6C9930	4	209	Simple Data
+Flingy.dat - Acceleration	0x6C9C78	2	209	Simple Data
+Flingy.dat - Turn Radius	0x6C9E20	1	209	Simple Data
+Flingy.dat - Top Speed	0x6C9EF8	4	209	Simple Data
+Flingy.dat - Unused	0x6CA240	1	209	Simple Data
+Flingy.dat - Sprite Index	0x6CA318	2	209	Simple Data
+Displayed HP	0x6CA94D	4	1	
+Unit being Produced	0x6CA9F0	4	1	Unsupported
+Mouse Button State	0x6CDDC0	4	1	Simple Data
+Mouse Coordinate X	0x6CDDC4	4	1	Simple Data
+Mouse Coordinate Y	0x6CDDC8	4	1	Simple Data
+Game Speed	0x6CDFD4	4	1	Backed By Code
+Music Volume	0x6CDFE0	4	1	Backed By Code
+Digital Volume	0x6CDFE4	4	1	Backed By Code
+Creep Tile Backup Buffer	0x6D0C68	4	1	Unsupported
+Tile Buffer Height	0x6D0C6C	4	1	Unsupported
+Tile Function Pointers	0x6D0C70	4	4	Unsupported
+Creep Overlay Buffer	0x6D0E80	4	1	Unsupported
+Active Tile Buffer	0x6D0E84	4	1	Unsupported
+Tile Buffer Width	0x6D0F08	4	1	Unsupported
+Replay Header	0x6D0F30	633	1	Read Only
+Replay Header - Is Broodwar	0x6D0F30	1	1	Read Only
+Replay Header - Frame Count	0x6D0F31	4	1	Read Only
+Replay Header - Campaign ID	0x6D0F35	2	1	Read Only
+Replay Header - Command ID	0x6D0F37	1	1	Read Only
+Replay Header - Rand Seed	0x6D0F38	4	1	Read Only
+Replay Header - Player Bytes	0x6D0F3C	1	8	Read Only
+Replay Header - Unknown_0	0x6D0F44	4	1	Read Only
+Replay Header - 해당 플레이어 이름	0x6D0F48	25	1	Read Only
+Replay Header - Game flags	0x6D0F60	4	1	Read Only
+Replay Header - MapSize	0x6D0F64	2	2	Read Only
+Replay Header - Active Player Count	0x6D0F68	1	1	Read Only
+Replay Header - Available Slots	0x6D0F69	1	1	Read Only
+Replay Header - Game Speed	0x6D0F6A	1	1	Read Only
+Replay Header - Game State	0x6D0F6B	1	1	Read Only
+Replay Header - Game Type	0x6D0F6C	1	1	Read Only
+Replay Header - Unknown_1	0x6D0F6D	1	1	Read Only
+Replay Header - Game Subtype	0x6D0F6E	2	1	Read Only
+Replay Header - Seed (Unused)	0x6D0F70	4	1	Read Only
+Replay Header - Tileset	0x6D0F74	2	1	Read Only
+Replay Header - Autosaved	0x6D0F76	1	1	Read Only
+Replay Header- Computer Player Count	0x6D0F77	1	1	Read Only
+Replay Header - Game Name	0x6D0F78	1	25	Read Only
+Replay Header - Map Name	0x6D0F91	1	24	Read Only
+Replay Header - Game Type	0x6D0FB1	1	1	Read Only
+Replay Header - Unknown	0x6D0FB2	1	1	Read Only
+Replay Header - Subtype	0x6D0FB3	2	1	Read Only
+Replay Header - Subtype display	0x6D0FB5	2	1	Read Only
+Replay Header - Subtype Label	0x6D0FB7	2	1	Read Only
+Replay Header - Victory Condition	0x6D0FB9	1	1	Read Only
+Replay Header - Resource Type	0x6D0FBA	1	1	Read Only
+Replay Header - Use Standard Units	0x6D0FBB	1	1	Read Only
+Replay Header - Fog of War (Unused)	0x6D0FBC	1	1	Read Only
+Replay Header - Starting Units	0x6D0FBD	1	1	Read Only
+Replay Header - Use Fixed Positions	0x6D0FBE	1	1	Read Only
+Replay Header - Usage Restriction Flags	0x6D0FBF	1	1	Read Only
+Replay Header - Allies Allowed	0x6D0FC0	1	1	Read Only
+Replay Header - Teams	0x6D0FC1	1	1	Read Only
+Replay Header - Cheats	0x6D0FC2	1	1	Read Only
+Replay Header - Tournament Mode	0x6D0FC3	1	1	Read Only
+Replay Header - Victory Condition Value	0x6D0FC4	4	1	Read Only
+Replay Header - Resources Value	0x6D0FC8	4	1	Read Only
+Replay Header - Unused value	0x6D0FCC	4	1	Read Only
+Replay Header - Extra	0x6D0FD0	1	1	Read Only
+Replay Header - Player Entries	0x6D0FD1	36	12	Read Only
+Replay Header - Player Colors	0x6D1181	4	8	Read Only
+Replay Header - Player Force Data	0x6D11A1	1	8	Read Only
+iscript.bin pointer	0x6D1200	4	1	Backed By Code
+stat_txt.tbl pointer	0x6D1238	4	1	Backed By Code
+Tile Flags Pointer	0x6D1260	4	1	Backed By Code
+Cheat Flags	0x6D5A6C	4	1	Simple Data
+Music ID	0x6D5BB0	4	1	
+Minimap State	0x6D5BBE	4	1	
+CV5 Pointer	0x6D5EC8	4	1	Backed By Code
+Storm Graphics Palette	0x1505E670	4	256	Read Only
+Battle.snp Join Channel	0x19046138	4	1	Simple Data
+Battle.snp Join Channel	0x1904613C	4	1	Simple Data

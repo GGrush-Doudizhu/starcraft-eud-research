@@ -1,13 +1,16 @@
-"""Convert only offset_table.md into a compact, standalone EUD JSON database."""
+"""Extract the eud-book memory table into a standalone TSV reference."""
 
 import argparse
 from collections import Counter
+import csv
+import io
 import json
 from pathlib import Path
 import re
 
 
 HEADER = ["Address", "Player ID", "Name", "Size", "Length", "SCR", "Description"]
+FIELDS = ["name", "addr", "size", "len", "scr"]
 ADDRESS = re.compile(r"\[([0-9A-Fa-f]{8})\]\[([0-9A-Fa-f]{8})\]")
 REFERENCE = re.compile(r"\[[0-9A-Fa-f]{8}\]:\s+\S.*")
 
@@ -75,19 +78,23 @@ def main():
         "--source", type=Path, required=True,
         help="Path to the eud-book src/offset_table.md source table",
     )
-    parser.add_argument("--output", type=Path, default=directory / "euddb.json")
+    parser.add_argument("--output", type=Path, default=directory / "euddb.tsv")
     args = parser.parse_args()
     if args.source.resolve() == args.output.resolve():
         parser.error("source and output must be different files")
 
     entries = parse_table(args.source.read_text(encoding="utf-8-sig"))
-    rows = [json.dumps(entry, ensure_ascii=False, separators=(",", ":")) for entry in entries]
-    payload = "[\n" + ",\n".join(rows) + "\n]\n"
-    if "\r" in payload or len(payload.splitlines()) != len(entries) + 2 or json.loads(payload) != entries:
-        raise ValueError("Serialized JSON failed validation")
+    rows = [FIELDS] + [[str(entry.get(field, "")) for field in FIELDS] for entry in entries]
+    buffer = io.StringIO(newline="")
+    csv.writer(buffer, delimiter="\t", lineterminator="\n").writerows(rows)
+    payload = buffer.getvalue()
+    restored = list(csv.reader(io.StringIO(payload, newline=""), delimiter="\t"))
+    if "\r" in payload or len(payload.splitlines()) != len(entries) + 1 or restored != rows:
+        raise ValueError("Serialized TSV failed validation")
     args.output.write_bytes(payload.encode("utf-8"))
-    if json.loads(args.output.read_text(encoding="utf-8")) != entries:
-        raise ValueError("Written JSON failed round-trip validation")
+    with args.output.open(encoding="utf-8", newline="") as output:
+        if list(csv.reader(output, delimiter="\t")) != rows:
+            raise ValueError("Written TSV failed round-trip validation")
 
     address_counts = Counter(entry["addr"] for entry in entries)
     print(json.dumps({
